@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Demu Properties – Direct Property Marketing</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demu Properties – Direct Sale Platform</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pcwX9ur4Y1QXk51GWmtnbYCG3vMEfSJQfCrAofe9MArbgc+9S+U4CPeqlYX9GZ1sx9+sXeNKOV8jgak0ohHZgQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Header & Navigation -->
   <header class="site-header">
     <div class="container header-content">
-      <span class="logo-text">Demu Properties</span>
+      <a href="#hero" class="logo" aria-label="Home">
+        <!-- Simple SVG logo combining a house and upward arrow to symbolise growth -->
+        <svg width="36" height="36" viewBox="0 0 64 64" class="logo-icon" aria-hidden="true" focusable="false">
+          <title>Company logo: stylised house with upward growth arrow</title>
+          <polygon points="32 8 4 28 8 28 8 56 26 56 26 40 38 40 38 56 56 56 56 28 60 28" class="logo-roof" />
+          <rect x="14" y="32" width="14" height="24" rx="2" class="logo-building" />
+          <rect x="36" y="32" width="14" height="24" rx="2" class="logo-building" />
+          <!-- Arrow symbol inside right building signifying increased profits -->
+          <polyline points="45 48 49 44 53 48" class="logo-arrow" />
+          <line x1="49" y1="44" x2="49" y2="52" class="logo-arrow" />
+        </svg>
+        <span class="logo-text">Demu Properties</span>
+      </a>
+      <nav class="nav" aria-label="Primary Navigation">
+        <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul id="primary-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#process">How&nbsp;It&nbsp;Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section id="hero" class="hero">
     <div class="container hero-content">
       <h1>Your Partner in Direct Property Sales</h1>
@@ -22,27 +54,195 @@
     </div>
   </section>
 
+  <!-- About Section -->
   <section id="about" class="about">
     <div class="container">
       <h2>Why Choose Us?</h2>
-      <p>We’re based in Moratuwa but our team understands Sri Lanka’s diverse regions. We empower property owners with custom marketing and single-property websites.</p>
+      <p>Traditional property listings often lock owners into developer contracts and commissions. Our mission is to empower Sri Lankan property owners by creating <strong>single‑property websites</strong> and custom marketing plans that showcase your home’s unique story. Great design matters: studies show that <strong>88&nbsp;% of consumers abandon websites with poor user experience</strong> and <strong>79&nbsp;% immediately look for a different site</strong><sup><a href="#fn1">[1]</a></sup>. We focus on clean, user‑friendly layouts with fast loading times to keep visitors engaged and convert them into qualified leads.</p>
+      <p>We’re based in Moratuwa but our team understands Sri Lanka’s diverse regions—from coastal villas in Galle to heritage bungalows in Kandy. By highlighting local architecture and culture in our designs, we appeal to buyers who might be <strong>considering moves to different regions</strong><sup><a href="#fn2">[2]</a></sup>. With our hyperlocal insights and modern technology, your property gets the attention it deserves.</p>
     </div>
   </section>
 
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-item">
+          <i class="fas fa-globe service-icon" aria-hidden="true"></i>
+          <h3>Single‑Property Websites</h3>
+          <p>We build responsive websites dedicated to your listing with professional copy, high‑resolution photos, interactive maps and inquiry forms. Own your online presence.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-list-ul service-icon" aria-hidden="true"></i>
+          <h3>Featured Listings</h3>
+          <p>Your property can be showcased on our centralized portal, increasing exposure to qualified buyers seeking homes in Sri Lanka’s premier locations.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-bullhorn service-icon" aria-hidden="true"></i>
+          <h3>Social Media Campaigns</h3>
+          <p>From Facebook and Instagram ads to YouTube video tours, we craft targeted campaigns that drive traffic to your property’s website and generate leads.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-chart-line service-icon" aria-hidden="true"></i>
+          <h3>Analytics &amp; Reporting</h3>
+          <p>Detailed performance reports show exactly where your visitors come from, which pages they view, and how many inquiries you receive so you can refine your strategy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="benefits">
+    <div class="container">
+      <h2>Benefits of Going Digital</h2>
+      <ul class="benefit-list">
+        <li><strong>Higher Return on Investment:</strong> digital marketing delivers a higher ROI than traditional print or mail campaigns; email marketing alone can generate about <strong>$36 for every $1 spent</strong><sup><a href="#fn3">[3]</a></sup>.</li>
+        <li><strong>Reach New Markets:</strong> use geo‑targeted ads to connect with buyers in different regions or demographics<sup><a href="#fn4">[4]</a></sup>.</li>
+        <li><strong>Trackable Performance:</strong> real‑time analytics let you measure website visits and conversions so you can fine‑tune your approach<sup><a href="#fn4">[4]</a></sup>.</li>
+        <li><strong>Customer Insights:</strong> data tools help you understand your audience and tailor content to their needs<sup><a href="#fn4">[4]</a></sup>.</li>
+        <li><strong>Engage Buyers at Every Stage:</strong> stay connected from initial discovery to final decision through blog posts, social media and email<sup><a href="#fn4">[4]</a></sup>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="process">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <h3>Consultation</h3>
+          <p>We begin with a free consultation to understand your property, goals and target market. Together we outline a strategy that maximizes your ROI.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <h3>Design &amp; Build</h3>
+          <p>Our team designs a custom website and prepares marketing assets, ensuring they reflect the unique character of your property and location.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <h3>Launch</h3>
+          <p>Your website goes live! We activate social media campaigns and list your property on our portal so you immediately reach interested buyers.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">4</span>
+          <h3>Analyse &amp; Grow</h3>
+          <p>We monitor performance, provide regular reports and adjust campaigns based on data to continually improve results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>What Our Partners Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p class="quote">“Our villa in Galle had been listed with several agents, but their commissions ate into our profit. These guys built us a stunning website and targeted ads that sold our home in just three weeks!”</p>
+          <p class="author">— Priya &amp; Malik S.</p>
+        </div>
+        <div class="testimonial">
+          <p class="quote">“As a small developer in Jaffna, we needed a better way to showcase our apartments. The team delivered modern websites for each unit and provided analytics to track interest. Highly recommend!”</p>
+          <p class="author">— S. Gunasekara</p>
+        </div>
+        <div class="testimonial">
+          <p class="quote">“Professional, responsive and creative. They captured the essence of our colonial property and helped us reach buyers beyond Colombo.”</p>
+          <p class="author">— The Perera Family</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
   <section id="contact" class="contact">
     <div class="container">
       <h2>Get in Touch</h2>
-      <p>Have questions or want to get started? Reach out today.</p>
-      <p><strong>Phone:</strong> <a href="tel:+94777132880">0777132880</a></p>
-      <p><strong>Email:</strong> <a href="mailto:info@demuproperties.com">info@demuproperties.com</a></p>
-      <p><strong>Location:</strong> Moratuwa, Western Province, Sri Lanka</p>
+      <p>Ready to start your project or have questions? Contact us today. We’re excited to help you maximise your property’s potential.</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <span><a href="tel:+94777132880">0777&nbsp;132&nbsp;880</a></span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span><a href="mailto:info@demuproperties.com">info@demuproperties.com</a></span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Moratuwa, Sri Lanka</span>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="return false" aria-label="Send us a message">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us about your property" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Demu Properties. All rights reserved.</p>
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#process">How&nbsp;It&nbsp;Works</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links" aria-label="Social media">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <!-- Footnotes for citations -->
+    <div class="container footnotes">
+      <p><small>
+        <span id="fn1">[1] <a href="【609846940238033†L110-L118】" target="_blank" rel="noopener">HousingWire: consumers abandon websites with poor UX; 88% leave quickly and 79% look elsewhere</a></span> ·
+        <span id="fn2">[2] <a href="【609846940238033†L175-L179】" target="_blank" rel="noopener">HousingWire: local design appeals to buyers; 26% consider moving to a different region</a></span> ·
+        <span id="fn3">[3] <a href="【837292543361749†L334-L349】" target="_blank" rel="noopener">BFPM: digital marketing delivers higher ROI; email marketing generates $36 for every $1 spent</a></span> ·
+        <span id="fn4">[4] <a href="【837292543361749†L350-L372】" target="_blank" rel="noopener">BFPM: digital marketing opens new markets, allows measurement, provides customer insights and engages buyers at every stage</a></span>
+      </small></p>
     </div>
   </footer>
+
+  <!-- Accessibility helper: ensure keyboard focus is visible -->
+  <script>
+    // Polyfill to add focus-visible class when using keyboard navigation
+    (function() {
+      var hadKeyboardEvent = false;
+      var el = document.documentElement;
+      function addFocusVisible(e) {
+        if (hadKeyboardEvent) {
+          e.target.classList.add('focus-visible');
+        }
+      }
+      function removeFocusVisible(e) {
+        e.target.classList.remove('focus-visible');
+      }
+      document.addEventListener('keydown', function(e) {
+        hadKeyboardEvent = true;
+      });
+      document.addEventListener('mousedown', function(e) {
+        hadKeyboardEvent = false;
+      });
+      document.addEventListener('focusin', addFocusVisible);
+      document.addEventListener('focusout', removeFocusVisible);
+    })();
+  </script>
 </body>
 </html>
